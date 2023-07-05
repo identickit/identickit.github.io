@@ -1,0 +1,14 @@
+ul {
+	list-style: none;
+    padding: 0px;
+}
+#navmenu {
+	font-family: "Comic Sans MS";
+    font-size: 18pt;
+    display: inline;
+    flex: 1;
+} 
+li {
+	display: inline;
+	margin: 0 60px;
+}
