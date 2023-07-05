@@ -10,11 +10,12 @@ margin: 25px auto;
 padding: 10px;
 }
 h1 {
-text-align: center;
+text-align: left;
 font-family:"Comic Sans MS";
 font-size: 32pt;
 color: #808080;
 text-shadow: 1px 1px 2px red;
+margin-left: 40px;
 }
 hr {
 height: 2px;
@@ -24,7 +25,7 @@ p {
 font-family:"Calibri";
 font-size: 16pt;
 text-align: center;
-text-indent: 48px;
+text-indent: 0px;
 color: #000000;
 }
 #footer {
@@ -39,4 +40,9 @@ font-family:"Comic Sans MS";
 font-size: 12pt;
 text-align: center;
 text-shadow: 1px 1px 2px gray;
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
 }
