@@ -29,11 +29,13 @@ height: 2px;
 color: #ff3819;
 }
 p {
-font-family:"Calibri";
+font-family:"Comic Sans MS";
 font-size: 16pt;
-text-align: center;
+text-align: left;
 text-indent: 0px;
 color: #000000;
+box-sizing: border-box;
+padding-left: 30px;
 }
 footer {
 width: 400px;
