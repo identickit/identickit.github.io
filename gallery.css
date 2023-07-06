@@ -1,0 +1,30 @@
+div.gallery {
+    margin: 15px;
+    float: left;
+    width: 220px;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 10px;
+    text-align: center;
+  }
+
+main {
+    width: 1000px;
+    height: 1000px;
+    background: #bebebe;
+    margin: auto;
+    padding: 10px;
+}
+
+p {
+    font-family:"Comic Sans MS";
+    font-size: 16pt;
+    text-align: center;
+    color: #000000;
+}
