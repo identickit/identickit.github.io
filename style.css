@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Omnes";
+
+}
+
+header {
+    font-family: Omnes;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 150px;
+    background: sienna;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    -webkit-text-stroke: 2px black;
+    font-size: 46px;
+    color: #fff;
+    text-decoration:none;
+    font-weight: 700;
+    margin-left: 24px;
+}
+
+.logo:hover {
+    text-shadow : 0 0 16px white;
+    z-index: 101;
+}
+
+ul * {
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.navbar {
+    margin-left: auto;
+    align-content: center;
+}
+
+.navbar a {
+    -webkit-text-stroke: 2px black;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    list-style: none;
+    padding: 20px 60px;
+    transition: .3s ease-in-out;
+}
+
+.navbar a:hover {
+    background-color:burlywood;
+    transition: .3s;
+}
+
+li:not(:last-child) {
+    padding-right: 6px;
+    border-right: 2px solid rgb(247, 207, 133);
+  }
+
+.main {
+    position: relative;
+    padding: 150px;
+    margin-top: 0px;
+    height: 1500px;
+}
+
+@font-face{
+    font-family: Omnes;
+    src:url(Omnes.otf);
+}
