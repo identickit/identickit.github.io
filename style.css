@@ -1,80 +1,152 @@
 *{
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Omnes";
-
-}
-
-header {
-    font-family: Omnes;
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 5px 150px;
-    background: sienna;
-    display: flex;
-    align-items: center;
-    z-index: 100;
-}
-
-.logo {
-    -webkit-text-stroke: 2px black;
-    font-size: 46px;
-    color: #fff;
-    text-decoration:none;
-    font-weight: 700;
-    margin-left: 24px;
-}
-
-.logo:hover {
-    text-shadow : 0 0 16px white;
-    z-index: 101;
-}
-
-ul * {
-    display: inline-block;
-    margin-left: 2px;
-}
-
-.navbar {
-    margin-left: auto;
-    align-content: center;
-}
-
-.navbar a {
-    -webkit-text-stroke: 2px black;
-    font-size: 30px;
-    color: #fff;
-    font-weight: 500;
+    margin: 0;
     text-decoration: none;
     list-style: none;
-    padding: 20px 60px;
-    transition: .3s ease-in-out;
-}
-
-.navbar a:hover {
-    background-color:burlywood;
-    transition: .3s;
-}
-
-li:not(:last-child) {
-    padding-right: 6px;
-    border-right: 2px solid rgb(247, 207, 133);
+    box-sizing: border-box;
   }
 
-.main {
+  body{
+    font-family: Omnes;
+  }
+
+  nav{
+    position: sticky;
+    background: sienna;
+    height: 80px;
+    width: 100%;
+    font-family: Omnes;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+  }
+
+  nav img{
+    display: inline-block;
+    margin-right: 1%;
     position: relative;
-    padding: 150px;
-    margin-top: 0px;
-    height: 1500px;
+    top: 15px;
+  }
+
+  li.logo{
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 2.2rem;
+  }
+
+  li.logo:hover{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: burlywood;
+  }
+
+  nav ul{
+    display: inline-block;
+    text-align: center;
+    margin-left: 40px;
+  }
+  nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: max(1.5rem, 1.5rem);
+    padding: 14px 26px;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+
+  nav ul li a:hover{
+    background-color: burlywood;
+  }
+
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 996px){
+    nav ul li a{
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 500px){
+    li.logo{
+        font-size: min(6vw, 2.2rem);
+        line-height: 75px;
+        transition: 0.1s;
+    }
+
+    nav img{
+        position: relative;
+        left: 0;
+        width: 40px;
+        transition: 0.1s;
+      }
+  }
+
+  @media (max-width: 996px){
+    .checkbtn{
+      position: relative;
+      display: block;
+      z-index: 10;
+    }
+    nav ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: gray;
+      top: 80px;
+      left: 100%;
+      text-align: center;
+      transition: all .5s;
+      margin-left: 0;
+    }
+    nav ul li{
+      display: block;
+      line-height: 10vh;
+      margin: 5vh 0;
+    }
+    nav ul li a{
+      font-size: 2rem;
+      padding: 6vh 30%;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+  header {
+    font-family: Omnes;
 }
 
 @font-face{
     font-family: Omnes;
     src:url(Omnes.otf);
+}
+
+
+div#main{
+    display:block;
+    width: 1000px;
+    height: 500px;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: burlywood
+}
+
+div p{
+    line-height: 500px;
+    text-align: center;
+    font-size: 3rem;
+    
 }
