@@ -20,6 +20,7 @@ nav{
   text-align: center;
   top: 0;
   bottom: 0;
+  z-index: 10;
 }
 
 nav img{
@@ -224,7 +225,7 @@ filter: drop-shadow(2px 2px 2px 2px #222);
 }
 
 img.download:hover{
-transform: scale(1.05);
+transform: scale(1.02);
 }
 
 img.ss {
@@ -245,13 +246,13 @@ filter: drop-shadow(2px 2px 2px 2px #222);
 }
 
 img.ss:hover {
-transform:scale(1.05);
+transform:scale(1.02);
 }
 
 img.ss2:hover {
 display: inline-block;
 padding: 20px 30px;
-transform:scale(1.05);
+transform:scale(1.02);
 }
 
 div#posttitle {
@@ -302,7 +303,7 @@ filter: drop-shadow(2px 2px 2px 2px #222);
 }
 
 img#postimg:hover{
-transform: scale(1.05);
+transform: scale(1.02);
 transition: 0.1s ease-in-out;
 }
 
@@ -318,7 +319,7 @@ hr.divider{
   text-align: center;
   margin: 20px;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 5px;
   width: 200px;
   display: inline-block;
@@ -329,3 +330,20 @@ hr.divider{
   border-radius: 50%;
   object-fit: cover;
 }
+
+img#ourmods {
+  width: 80%;
+  clear: both;
+  margin: auto;
+  padding: 20px 0;
+  display: block;
+  transition: 0.1s ease-in-out;
+  border-radius: 50px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(2px 2px 2px 2px #222);
+}
+
+img#ourmods:hover{
+  transform: scale(1.02);
+  transition: 0.1s ease-in-out;
+  }
